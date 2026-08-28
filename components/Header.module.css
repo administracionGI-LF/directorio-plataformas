@@ -1,0 +1,118 @@
+.header {
+  position: relative;
+  background: linear-gradient(
+    115deg,
+    #a3132f 0%,
+    #a3132f 46%,
+    #d9a53a 46%,
+    #d9a53a 50%,
+    #14509c 50%,
+    #0e3f7c 100%
+  );
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.leftAdmin {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoBadgeLungFung {
+  background: #fff;
+  border-radius: 9px;
+  padding: 4px 7px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+}
+
+.logoBadgeGolden {
+  background: #fff;
+  border-radius: 9px;
+  padding: 5px 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+}
+
+.titleText {
+  font-size: 17px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.2px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.adminTitle {
+  font-size: 16.5px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.greeting {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.greetingName {
+  color: #fff;
+}
+
+.btnGhost,
+.btnBack {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border-radius: 9px;
+  padding: 9px 15px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btnGhost {
+  font-weight: 700;
+}
+
+.btnGhost:hover,
+.btnBack:hover {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.btnOutline {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: #fff;
+  border-radius: 9px;
+  padding: 9px 15px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btnOutline:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
