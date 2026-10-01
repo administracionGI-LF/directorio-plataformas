@@ -12,15 +12,17 @@ export default function PasswordReveal({ password }: { password: string }) {
   return (
     <div className={styles.pwRow}>
       <span className={styles.pwLabel}>Contraseña</span>
-      <span className={styles.pwValue}>{show ? password : MASK}</span>
-      <button
-        type="button"
-        onClick={() => setShow((s) => !s)}
-        className={styles.pwToggle}
-        aria-label={show ? "Ocultar contraseña" : "Mostrar contraseña"}
-      >
-        {show ? <EyeOffIcon size={15} /> : <EyeIcon size={15} />}
-      </button>
+      <div className={styles.pwValueRow}>
+        <span className={styles.pwValue}>{show ? password : MASK}</span>
+        <button
+          type="button"
+          onClick={() => setShow((s) => !s)}
+          className={styles.pwToggle}
+          aria-label={show ? "Ocultar contraseña" : "Mostrar contraseña"}
+        >
+          {show ? <EyeOffIcon size={15} /> : <EyeIcon size={15} />}
+        </button>
+      </div>
     </div>
   );
 }
